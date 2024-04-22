@@ -10,7 +10,9 @@ pipeline {
             }
         }
         stage('package'){
-            sh 'echo creating artifact with maven'
+            steps{
+                sh 'echo creating artifact with maven'
+            }
         }
     }
 }
