@@ -9,5 +9,8 @@ pipeline {
                 sh 'java HelloWorld'
             }
         }
+        stage('package'){
+            sh 'echo creating artifact with maven'
+        }
     }
 }
